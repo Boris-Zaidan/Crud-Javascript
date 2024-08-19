@@ -1,0 +1,36 @@
+.button {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  background-color: #151515;
+  color: #fdfffc;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.button:hover {
+  transform: translateY(-1.5px);
+}
+
+
+button.cadst {
+  background: #ff9f1c
+}
+
+button.editar {
+  background: #2ec4b6;
+}
+
+button.excluir {
+  background: #e71d36;
+}
+
+button.salvar {
+  background: #011627;
+}
+
+button.cancelar {
+  background: #ff9f1c;
+}
