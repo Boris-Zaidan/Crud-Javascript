@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crud</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Roboto:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/button.css">
+
+  <script src="main.js defender"></script>
+</head>
+
+<body>
+  <header>
+    <h1 class="header-title">Cadastro de Clientes</h1>
+  </header>
+  <main>
+    <button type="button" class="button cadst mobile" id="cadastrarCliente">Cadastrar Cliente</button>
+    <table class="records">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>Celular</th>
+          <th>Cidade</th>
+          <th>Profissão</th>
+          <th>Tipo Sanguíneo</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Boris Zaidan</td>
+          <td>Dvbzaidan@gmail.com</td>
+          <td>(32) 99999-1111</td>
+          <td>Juiz De Fora</td>
+          <td>Programador</td>
+          <td>o+</td>
+          <td>
+            <button type="button" class="button editar ">editar</button>
+            <button type="button" class="button excluir ">excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Pedro Lucas</td>
+          <td>pedrol@gmail.com</td>
+          <td>(32) 11111-1111</td>
+          <td>Rio Pomba</td>
+          <td>Advogado</td>
+          <td>o-</td>
+          <td>
+            <button type="button" class="button editar">editar</button>
+            <button type="button" class="button excluir">excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Maria Da Conceição</td>
+          <td>maria@gmail.com</td>
+          <td>(32) 22222-2222</td>
+          <td>Rio De Janeiro</td>
+          <td>Médica</td>
+          <td>A+</td>
+          <td>
+            <button type="button" class="button editar">editar</button>
+            <button type="button" class="button excluir">excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <header class="modal-header">
+          <h2>Novo Cliente</h2>
+          <span class="modal-close" id="modalClose">&#10006;</span>
+        </header>
+        <form class="modal-form">
+          <input type="text" class="modal-field" placeholder="Nome do Cliente">
+          <input type="email" class="modal-field" placeholder="e-mail do Cliente">
+          <input type="text" class="modal-field" placeholder="Celular do Cliente">
+          <input type="text" class="modal-field" placeholder="Cidade do Cliente">
+          <input type="text" class="modal-field" placeholder="Profissão Cliente">
+          <input type="text" class="modal-field" placeholder="tipo Sanguíneo Cliente">
+        </form>
+        <footer class="modal-footer">
+          <button class="button salvar ">Salvar</button>
+          <button class="button cancelar ">Cancelar</button>
+        </footer>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
