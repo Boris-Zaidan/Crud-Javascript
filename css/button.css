@@ -3,9 +3,9 @@
   border: none;
   outline: none;
 
-  color: #fdfffc;
+  color: black;
   border-radius: 7px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.25s ease-out;
 }
@@ -29,10 +29,12 @@ button.excluir {
 
 button.salvar {
   background: #011627;
+  color: white;
 }
 
 button.cancelar {
   background: #ff9f1c;
+  color: black;
 }
 
 @media(max-width:480px) {

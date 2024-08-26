@@ -28,7 +28,8 @@ header {
 }
 
 .header-title {
-  color: rgba(255, 255, 255, 0.89);
+  color: #ffa01cf5;
+
 
 }
 
@@ -79,10 +80,16 @@ footer {
 
 .records th {
   height: 40px;
-  background-color: #011627ee;
-  ;
+  background-color: #011627ef;
+  color: #ffa01cf5;
   padding-left: 20px;
   font-size: 1.2rem;
+}
+
+.records th:hover {
+  background-color: black;
+  color: #ffa01cf5;
+
 }
 
 .records td {
@@ -99,7 +106,7 @@ footer {
 
 .records tr:hover {
   background-color: #ff9f1c;
-  color: rgba(255, 255, 255, 0.904);
+  color: black;
 
 
 }
@@ -166,6 +173,7 @@ footer {
   height: 40px;
   line-height: 40px;
   font-size: 1rem;
+  color: white;
 }
 
 
@@ -182,8 +190,8 @@ footer {
 }
 
 .modal-close:hover {
-  background-color: #FF4949;
-  color: white;
+  background-color: #ff4949;
+
 }
 
 .modal-form {
@@ -205,8 +213,7 @@ footer {
 }
 
 .modal-field:focus {
-  border: 2px solid yellow;
-  box-shadow: 0 0 3px yellow
+  border: 2px solid #ff9f1c;
 }
 
 

@@ -46,12 +46,14 @@
           <span class="modal-close" id="modalClose">&#10006;</span>
         </header>
         <form id="form" class="modal-form">
-          <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Cliente" required>
-          <input type="email" id="email" class="modal-field" placeholder="e-mail do Cliente" required>
-          <input type="text" id="celular" class="modal-field" placeholder="Celular do Cliente" required>
-          <input type="text" id="cidade" class="modal-field" placeholder="Cidade do Cliente" required>
-          <input type="text" id="Profissão" class="modal-field" placeholder="Profissão Cliente" required>
-          <input type="text" id="Datanasc" class="modal-field" placeholder="Data de Nascimento Cliente" required>
+          <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome:" autocomplete="on"
+            required>
+          <input type="email" id="email" class="modal-field" placeholder="e-mail:" autocomplete="on" required>
+          <input type="text" id="celular" class="modal-field" placeholder="Celular:" autocomplete="on">
+          <input type="text" id="cidade" class="modal-field" placeholder="Cidade:" autocomplete="on" required>
+          <input type="text" id="Profissão" class="modal-field" placeholder="Profissão:" autocomplete="on" required>
+          <input type="text" id="datanasc" class="modal-field" placeholder="Data de Nascimento" autocomplete="on"
+            required>
         </form>
         <footer class="modal-footer">
           <button id="salvar" class="button salvar">Salvar</button>
@@ -60,6 +62,9 @@
       </div>
     </div>
   </main>
+
+  <script src="main.js"></script>
 </body>
+
 
 </html>
