@@ -1,3 +1,4 @@
+/* Estilos gerais */
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +14,7 @@ body {
   background-color: white;
   font-family: "Lato", sans-serif;
   font-style: normal;
-
 }
-
 
 header {
   display: flex;
@@ -24,13 +23,10 @@ header {
   height: 3rem;
   background-color: #011627;
   text-align: center;
-
 }
 
 .header-title {
   color: #ffa01cf5;
-
-
 }
 
 main {
@@ -42,7 +38,7 @@ main {
   margin: 5vh auto;
   padding: 50px;
   gap: 20px;
-
+  box-shadow: 2px 2px 10px #01162721;
 }
 
 footer {
@@ -51,25 +47,6 @@ footer {
   font-weight: 200;
   font-style: italic;
   padding: 20px;
-}
-
-@media (max-width:480px) {
-  header {
-    position: fixed;
-    width: 100%;
-  }
-
-  .header-title {
-    font-size: 1rem;
-    margin: 0 auto;
-  }
-
-  main {
-    padding: 0;
-    margin: 20px 0 0 0;
-    width: 100%;
-    box-shadow: none;
-  }
 }
 
 .records {
@@ -89,7 +66,6 @@ footer {
 .records th:hover {
   background-color: black;
   color: #ffa01cf5;
-
 }
 
 .records td {
@@ -107,36 +83,6 @@ footer {
 .records tr:hover {
   background-color: #ff9f1c;
   color: black;
-
-
-}
-
-@media(max-width:480px) {
-  .records {
-    border-spacing: 5px;
-  }
-
-  .records thead {
-    display: none;
-  }
-
-  .records tr {
-    box-shadow: black;
-  }
-
-  .records td:not(:first-child) {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-
-  .records td {
-    margin: 10px 0;
-  }
-
-  .records tr:hover {
-    background-color: inherit;
-  }
 }
 
 .modal {
@@ -176,8 +122,6 @@ footer {
   color: white;
 }
 
-
-
 .modal-close {
   position: absolute;
   right: 0;
@@ -191,7 +135,6 @@ footer {
 
 .modal-close:hover {
   background-color: #ff4949;
-
 }
 
 .modal-form {
@@ -216,14 +159,97 @@ footer {
   border: 2px solid #ff9f1c;
 }
 
-
 .modal-footer {
   background-color: inherit;
   text-align: right;
   padding: 0 20px;
 }
 
-@media (max-width:480px) {
+/* Responsividade para tablets (até 768px) */
+@media (max-width: 768px) {
+  header {
+    height: 3.5rem;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .header-title {
+    font-size: 1.2rem;
+  }
+
+  main {
+    width: 95%;
+    padding: 30px;
+    margin: 3vh auto;
+    gap: 15px;
+  }
+
+  .records th,
+  .records td {
+    font-size: 1rem;
+    padding-left: 15px;
+  }
+
+  .records th:last-child,
+  .records td:last-child {
+    min-width: 100px;
+  }
+
+  .modal-content {
+    width: 70vw;
+    margin: 10vh auto;
+  }
+
+  .modal-field {
+    width: calc(100% - 20px);
+  }
+}
+
+/* Responsividade para smartphones (até 480px) */
+@media (max-width: 480px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  .header-title {
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+
+  main {
+    padding: 0;
+    margin: 20px 0 0 0;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .records {
+    border-spacing: 5px;
+  }
+
+  .records thead {
+    display: none;
+  }
+
+  .records tr {
+    box-shadow: black;
+  }
+
+  .records td:not(:first-child) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .records td {
+    margin: 10px 0;
+  }
+
+  .records tr:hover {
+    background-color: inherit;
+  }
+
   .modal {
     top: 100%;
     transition: all 1s ease;
